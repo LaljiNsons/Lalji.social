@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lalji.social — Under Development</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(120deg,#f8fafc,#e2e8f0);
+  overflow:hidden;
+}
+
+/* Floating blobs */
+.blob{
+  position:absolute;
+  width:400px;height:400px;
+  background:radial-gradient(circle,#38bdf8,transparent);
+  filter:blur(120px);
+  opacity:.25;
+  animation:float 10s infinite alternate ease-in-out;
+}
+.blob:nth-child(1){top:10%;left:10%;}
+.blob:nth-child(2){bottom:10%;right:10%;animation-delay:2s;}
+
+@keyframes float{
+  from{transform:translateY(0);}
+  to{transform:translateY(40px);}
+}
+
+/* Card */
+.card{
+  position:relative;
+  z-index:2;
+  width:400px;
+  padding:30px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(20px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+/* Logo box */
+.logo-box{
+  width:100%;
+  aspect-ratio:1344/768;
+  border-radius:16px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+/* Logo image */
+.logo-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+/* Hover effect */
+.logo-box img:hover{
+  transform:scale(1.05);
+}
+
+/* Title */
+h1{
+  font-family:'Syne';
+  font-size:26px;
+}
+
+p{
+  margin-top:6px;
+  color:#64748b;
+}
+
+/* Divider */
+.line{
+  width:60px;
+  height:3px;
+  background:#0ea5e9;
+  margin:15px auto;
+  border-radius:10px;
+}
+
+/* Launch */
+.launch{
+  color:#0ea5e9;
+  font-size:14px;
+}
+
+/* Buttons */
+.btn{
+  margin-top:15px;
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+/* Main button */
+.btn-main{
+  background:linear-gradient(135deg,#0ea5e9,#38bdf8);
+  color:white;
+}
+
+.btn-main:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(14,165,233,0.3);
+}
+
+/* Back button */
+.btn-back{
+  margin-top:10px;
+  background:#e2e8f0;
+  color:#0f172a;
+}
+
+.btn-back:hover{
+  transform:translateY(-2px);
+  background:#cbd5f5;
+}
+
+/* Footer */
+.footer{
+  margin-top:20px;
+  font-size:12px;
+  color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="blob"></div>
+<div class="blob"></div>
+
+<div class="card">
+
+<!-- LOGO (JUST CHANGE FILE NAME) -->
+<div class="logo-box">
+  <img src="laljinsons logo with name white.jpeg" alt="Lalji Logo">
+</div>
+
+<h1>Lalji.social</h1>
+<p>Website Under Development</p>
+
+<div class="line"></div>
+
+<div class="launch">
+Launching: 12 April – 22 April 2026
+</div>
+
+<a class="btn btn-main" href="https://wa.me/919016017321?text=Hey I want update for Lalji.social">
+💬 Get Notification
+</a>
+
+<a class="btn btn-back" href="index.html">
+← Back to Bio
+</a>
+
+<div class="footer">
+© 2026 Lalji.social — All rights reserved <br>
+Unauthorized copying, reproduction, or resale is strictly prohibited.
+</div>
+</div>
+</body>
+</html>
